@@ -1,0 +1,14 @@
+{
+  "Adelantos": [
+    {
+      "id": 1,
+      "mineaturaAdelanto": "/assets/Fotos OLV/PORTALES_V2 43.jpg",
+      "urlVideo": "https://www.youtube.com/embed/WSwARTscluE"
+    },
+    {
+      "id": 2,
+      "mineaturaAdelanto": "/assets/Fotos OLV/x.jpg",
+      "urlVideo": "https://www.youtube.com/embed/RYVQ0ZzL-tY"
+    }
+  ]
+}

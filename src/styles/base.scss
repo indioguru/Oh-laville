@@ -6,6 +6,40 @@
 
 .containerAll {
   width: 90%;
-  margin: 0px auto;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+//---------------------Fuentes---------------------
+@font-face {
+  font-family: "sans-bold";
+  src: url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.ttf")
+      format("truetype"),
+    url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.eot") format("eot"),
+    url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.woff") format("woff"),
+    url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "sans-medium";
+  src: url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.ttf")
+      format("truetype"),
+    url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.eot") format("eot"),
+    url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.woff")
+      format("woff"),
+    url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "sans-semibold";
+  src: url("/assets/tipofrafía/NotoSans-semibold/NotoSans-SemiBold.ttf")
+      format("truetype"),
+    url("/assets/tipofrafía//NotoSans-semibold/NotoSans-SemiBold.eot")
+      format("eot"),
+    url("/assets/tipofrafía/NotoSans-semibold/NotoSans-SemiBold.woff")
+      format("woff"),
+    url("/assets/tipofrafía/NotoSans-semibold/NotoSans-SemiBold.woff2")
+      format("woff2");
 }

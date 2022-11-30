@@ -1,0 +1,20 @@
+{
+  "Respuestas": [
+    {
+      "id": 1,
+      "respuesta": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    },
+    {
+      "id": 2,
+      "respuesta": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    },
+    {
+      "id": 3,
+      "respuesta": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    },
+    {
+      "id": 4,
+      "respuesta": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr "
+    }
+  ]
+}
