@@ -6,17 +6,17 @@ const Footer = () => {
       <div className="footer_container">
         <div className="content_icons">
           <div className="youtube">
-            <img src="/assets/redes sociales/youtube.png" alt="" />
+            <img src="/assets/redessociales/youtube.png" alt="" />
           </div>
           <div className="instagram">
-            <img src="/assets/redes sociales/instagram.png" alt="" />
+            <img src="/assets/redessociales/instagram.png" alt="" />
           </div>
           <div className="facebook">
-            <img src="/assets/redes sociales/facebook.png" alt="" />
+            <img src="/assets/redessociales/facebook.png" alt="" />
           </div>
 
           <div className="spotify">
-            <img src="/assets/redes sociales/spotify.png" alt="" />
+            <img src="/assets/redessociales/spotify.png" alt="" />
           </div>
         </div>
 
