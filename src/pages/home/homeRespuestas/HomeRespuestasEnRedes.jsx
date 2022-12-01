@@ -8,7 +8,7 @@ const HomeRespuestasEnRedes = () => {
   }, []);
 
   return (
-    <div className="home_respuestaEnRedes">
+    <div className="home_respuestaEnRedes containerAll">
       <div className="home_respuestaEnRedes_container">
         <div className="header">
           <h1>¿QUÉ ES UNA FELICIDAD ROMÁNTICA?</h1>

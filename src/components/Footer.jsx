@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer containerAll">
       <div className="footer_container">
         <div className="content_icons">
           <div className="youtube">

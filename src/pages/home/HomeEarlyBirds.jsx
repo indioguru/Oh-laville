@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeEarlyBirds = () => {
   return (
-    <div className="home_earlyBird">
+    <div className="home_earlyBird containerAll">
       <div className="home_earlyBird_container">
         <div className="header">
           <h1>EARLY BIRDS TOUR 2022</h1>

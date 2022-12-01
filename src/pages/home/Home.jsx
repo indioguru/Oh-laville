@@ -1,12 +1,19 @@
 import React from "react";
 import HomeAdelantos from "./homeAdelantos/HomeAdelantos";
+import { HomeBackground } from "./HomeBackground";
 import HomeEarlyBirds from "./HomeEarlyBirds";
+import { HomeGaleria } from "./HomeGaleria/HomeGaleria";
+import { HomeHeader } from "./HomeHeader";
 import HomeRespuestasEnRedes from "./homeRespuestas/HomeRespuestasEnRedes";
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="home_container containerAll">
+      <HomeBackground />
+
+      <div className="home_container">
+        <HomeHeader />
+        <HomeGaleria />
         <HomeAdelantos />
         <HomeRespuestasEnRedes />
         <HomeEarlyBirds />

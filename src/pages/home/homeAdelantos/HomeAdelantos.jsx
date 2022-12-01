@@ -8,7 +8,7 @@ const HomeAdelantos = () => {
   }, []);
 
   return (
-    <div className="home_adelantos">
+    <div className="home_adelantos containerAll">
       <div className="home_adelantos_container">
         <div className="header">
           <h1> ADELANTOS</h1>

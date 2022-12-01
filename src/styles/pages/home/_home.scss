@@ -1,5 +1,57 @@
 .home {
-  background-color: #cbd2e5;
+  &_header {
+    h1 {
+      font-family: "sans-bold";
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 12px;
+    }
+  }
+  &_background_container {
+    .gradient {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-size: 150% 150% !important;
+      animation: gradient 15s ease infinite;
+      background: linear-gradient(
+        180deg,
+        #d81a46 0%,
+        #d825b5 22%,
+        #bbd2e0 100%
+      );
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .granulado {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: url("/assets/granulado.jpg");
+      mix-blend-mode: soft-light;
+      opacity: 0.8;
+    }
+  }
+
+
+
+  @import "./homeModel";
+  @import "./homeGaleria";
   @import "./homeRespuestasEnRedes";
   @import "./homeEarlyBird";
   @import "./homeAdelantos";
