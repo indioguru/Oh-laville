@@ -1,12 +1,4 @@
 .home {
-  &_header {
-    h1 {
-      font-family: "sans-bold";
-      font-size: 20px;
-      text-align: center;
-      letter-spacing: 12px;
-    }
-  }
   &_background_container {
     .gradient {
       position: fixed;
@@ -48,11 +40,10 @@
     }
   }
 
-
-
   @import "./homeModel";
   @import "./homeGaleria";
   @import "./homeRespuestasEnRedes";
   @import "./homeEarlyBird";
   @import "./homeAdelantos";
+  @import "./homeHeader";
 }

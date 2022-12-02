@@ -26,6 +26,8 @@ const HomeRespuestasEnRedes = () => {
         <div className="content_button">
           <button>IR AL POST</button>
         </div>
+
+        
       </div>
     </div>
   );

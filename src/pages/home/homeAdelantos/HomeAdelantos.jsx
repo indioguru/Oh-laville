@@ -50,6 +50,7 @@ const HomeAdelantos = () => {
             Tus palabras son un río Desbordándose en tu boca Tus emociones son
             espuma Que se absorbe con zapina
           </p>
+          <img src="/assets/consonido.png" alt="" />
         </div>
       </div>
     </div>

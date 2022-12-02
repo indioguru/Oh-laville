@@ -37,14 +37,12 @@
       format("woff2");
 }
 
-
-body{
+body {
   overflow-x: hidden;
   font-family: "sans-medium";
-
 }
 
-img{
+img {
   width: 100%;
 }
 .containerAll {
@@ -67,11 +65,22 @@ img{
     background-position: 50%;
     color: white;
     font-family: sans-medium;
-
     letter-spacing: 4px;
-    width: 100%;
+    width: 170px;
     height: 60px;
+  }
+
+  @media (hover: hover) {
+    button:hover {
+      cursor: pointer;
+    }
   }
 }
 
-
+@media (min-width: 750px) {
+  .contet_button {
+    button {
+      height: 70px;
+    }
+  }
+}

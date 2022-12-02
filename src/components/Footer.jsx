@@ -1,5 +1,5 @@
 import React from "react";
-
+import Media from "react-media";
 const Footer = () => {
   return (
     <div className="footer containerAll">
@@ -24,11 +24,30 @@ const Footer = () => {
           <a href="https://www.youtube.com/watch?v=Yabi_nCGXdo&ab_channel=Yanah">
             Politicas de privacidad
           </a>
+          <Media query="(max-width: 750px)">
+            {(resolution) => {
+              return resolution ? (
+                ""
+              ) : (
+                <div className="content_rights">
+                  <p>© 2022 OLV </p>
+                </div>
+              );
+            }}
+          </Media>
         </div>
 
-        <div className="content_rights">
-          <p>© 2022 OLV </p>
-        </div>
+        <Media query="(max-width: 750px)">
+          {(resolution) => {
+            return resolution ? (
+              <div className="content_rights">
+                <p>© 2022 OLV </p>
+              </div>
+            ) : (
+              ""
+            );
+          }}
+        </Media>
       </div>
     </div>
   );

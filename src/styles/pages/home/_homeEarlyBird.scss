@@ -19,7 +19,10 @@
       margin-top: 50px;
     }
     .input {
-      padding: 10px 0px;
+      padding: 20px 0px;
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
     }
 
     .input input {
@@ -28,9 +31,8 @@
       width: 100%;
       background-color: #ffffff5c;
       font-size: 12px;
-      height: 34px;
-      max-width: 400px;
-      border: 2px white solid;
+      height: 40px;
+      border: 1px white solid;
       padding: 10px;
       margin: 0 auto;
     }
@@ -40,8 +42,40 @@
       font-size: 12px;
       font-family: sans-semibold;
       letter-spacing: 4px;
+      display: block;
+      position: absolute;
+      top: 0;
     }
+  }
 
+  @media (min-width: 750px) {
+    &_container {
+      margin-top: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .header h1 {
+        width: 80%;
+        margin-top: 0px;
+        font-size: 32px;
+      }
 
+      .header p {
+        font-size: 16px;
+      }
+
+      .content_inputs {
+        margin-top: 0px;
+      }
+
+      .header {
+        flex: 1 1 50%;
+      }
+
+      .content_flex {
+        flex: 5 1 50%;
+      }
+    }
   }
 }

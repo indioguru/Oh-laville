@@ -1,0 +1,126 @@
+&_header {
+  &_container {
+    .content_vol {
+      position: absolute;
+      right: 0;
+      margin: 20px;
+      .vol {
+        width: 80px;
+        height: 40px;
+        border-radius: 50px;
+        border: 2px white solid;
+        background: #ffffff82 0% 0% no-repeat padding-box;
+        position: relative;
+      }
+
+      img {
+        width: 35px;
+        position: absolute;
+      }
+
+      .noSound {
+        animation-name: noSoundAnim;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+      }
+
+      .sound {
+        animation-name: soundAnim;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    @media (hover: hover) {
+      .content_vol:hover {
+        cursor: pointer;
+      }
+    }
+
+    .textTop {
+      padding-top: 150px;
+    }
+    h1 {
+      font-family: "sans-bold";
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 12px;
+    }
+    .contet_img {
+      margin: 50px 0px;
+      text-align: center;
+    }
+
+    .contet_img img {
+      width: 130px;
+    }
+
+    .content_decoration {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      P {
+        transform: rotate(90deg);
+        text-decoration-line: underline;
+        letter-spacing: 4px;
+        font-size: 12px;
+        font-family: sans-medium;
+      }
+    }
+  }
+
+  @media (min-width: 750px) {
+    &_container {
+      display: flex;
+      justify-content: center;
+      padding-top: 200px;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .content_flex {
+        width: 55%;
+      }
+      .textTop {
+        padding-top: 0px;
+        font-size: 23px;
+      }
+
+      .textBot {
+        padding-top: 15px;
+        font-size: 16px;
+      }
+
+      .contet_img {
+        margin: 0px;
+        width: 40%;
+      }
+
+      .contet_img img {
+        width: 200px;
+      }
+
+      .content_vol {
+        top: 0;
+      }
+    }
+  }
+}
+
+@keyframes soundAnim {
+  0% {
+    left: 2px;
+  }
+
+  100% {
+    left: 40px;
+  }
+}
+
+@keyframes noSoundAnim {
+  0% {
+    left: 40px;
+  }
+
+  100% {
+    left: 2px;
+  }
+}

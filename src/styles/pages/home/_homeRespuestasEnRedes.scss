@@ -44,7 +44,13 @@
     .content_button {
       text-align: center;
       padding-top: 50px;
-   
+      width: 100%;
+    }
+
+    @media (hover: hover) {
+      .content_button button:hover {
+        cursor: pointer;
+      }
     }
     .content_button button {
       border: none;
@@ -56,8 +62,60 @@
       color: white;
       font-family: sans-medium;
       letter-spacing: 4px;
-      width: 100%;
+      width: 170px;
       height: 60px;
+    }
+  }
+
+  @media (min-width: 750px) {
+    &_container {
+      .content_responses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        .responses {
+          width: 25%;
+        }
+
+        .responses p {
+          font-size: 16px;
+        }
+        .responses:nth-child(2n + 0) {
+          float: none;
+          text-align: left;
+        }
+
+        .responses:nth-child(2n + 1) {
+          float: none;
+          text-align: left;
+        }
+      }
+      .header {
+        text-align: center;
+      }
+
+      .header h1 {
+        padding-top: 100px;
+        font-size: 32px;
+        letter-spacing: 12px;
+      }
+
+      .header h3 {
+        font-size: 32px;
+        padding-bottom: 100px;
+        letter-spacing: 12px;
+      }
+
+      .content_button button {
+        background-image: none;
+        color: black;
+        font-family: sans-semibold;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-decoration-line: underline;
+      }
     }
   }
 }

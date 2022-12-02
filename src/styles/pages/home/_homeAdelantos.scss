@@ -7,19 +7,22 @@
       font-size: 20px;
     }
 
-    .content_videos {
-      width: 100%;
-    }
-
     .content_iframe {
       border: 7px solid;
       border-image: url("/assets/marco2.png");
       border-image-slice: 30;
-      margin: 40px 0px;
+      margin: 20px 0px;
       border-image-width: 9px;
       position: relative;
       width: 100%;
+      max-width: 350px;
       height: 180px;
+    }
+
+    .content_videos {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
 
     .content_videos iframe {
@@ -31,12 +34,64 @@
       padding-top: 20px;
       padding-bottom: 100px;
       width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      gap: 1rem;
+
+      img {
+        width: 20px;
+        height: 20px;
+        align-self: center;
+      }
     }
 
     .content_footer p {
       font-family: sans-medium;
       letter-spacing: 4px;
       font-size: 12px;
+    }
+  }
+
+  @media (min-width: 750px) {
+    &_container {
+      .header h1 {
+        font-size: 32px;
+        padding: 20px 0px;
+      }
+      .content_footer {
+        width: 40%;
+        padding-left: 30px;
+        padding-top: 40px;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .content_footer p {
+        font-size: 16px;
+      }
+      .content_videos {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+
+        .content_iframe {
+          max-width: 550px;
+          height: 300px;
+          border: 10px solid;
+          border-image: url("/assets/marco2.png");
+          border-image-slice: 30;
+          border-image-width: 12px;
+        }
+
+        .content_iframe:nth-child(2) {
+          transform: translateY(100px);
+        }
+      }
     }
   }
 }
