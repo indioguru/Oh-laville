@@ -19,15 +19,14 @@ const HomeRespuestasEnRedes = () => {
           {allResponses.map((item) => (
             <div className="responses" key={item.id}>
               <p>{item.respuesta}</p>
+              <p className="name">{item.nombre}</p>
             </div>
           ))}
         </div>
 
         <div className="content_button">
-          <button>IR AL POST</button>
+          <button className="ga4-call_to_action-ir_a_post">IR AL POST</button>
         </div>
-
-        
       </div>
     </div>
   );

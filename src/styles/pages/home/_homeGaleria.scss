@@ -21,12 +21,18 @@
       width: 20px;
     }
 
+    @media (hover: hover) {
+      img:hover {
+        cursor: pointer;
+      }
+    }
+
     @media (min-width: 768px) {
       p {
         font-size: 16px;
       }
 
-      img{
+      img {
         width: 40px;
       }
     }

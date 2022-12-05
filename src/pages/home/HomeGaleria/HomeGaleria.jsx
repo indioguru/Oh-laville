@@ -5,7 +5,7 @@ export const HomeGaleria = () => {
     <div className="home_galeria containerAll">
       <div className="lyrics">
         <p>Tu felicidad es romántica tu forma de amar enígmatica</p>
-        <img src="/assets/consonido.png" alt="consonido" />
+        <img className="ga4-call_to_action-verso_audio" src="/assets/consonido.png" alt="consonido" />
       </div>
 
       <div className="home_galeria_images">
@@ -31,7 +31,7 @@ export const HomeGaleria = () => {
               El brillo blanco de tu pelo Siempre fiel a tu retrato El velo
               blanco de tus ojos Lo que amansa tus demonios
             </p>
-            <img src="/assets/consonido.png" alt="consonido" />
+            <img className="ga4-call_to_action-verso_audio" src="/assets/consonido.png" alt="consonido" />
           </div>
         )}
 

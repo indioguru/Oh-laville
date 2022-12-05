@@ -44,6 +44,12 @@
         height: 20px;
         align-self: center;
       }
+
+      @media (hover: hover) {
+        img:hover {
+          cursor: pointer;
+        }
+      }
     }
 
     .content_footer p {

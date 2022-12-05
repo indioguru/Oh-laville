@@ -60,6 +60,23 @@
       }
     }
 
+    @media (hover: hover) {
+      .youtube:hover {
+        cursor: pointer;
+      }
+      .facebook:hover {
+        cursor: pointer;
+      }
+
+      .spotify:hover {
+        cursor: pointer;
+      }
+
+      .instagram:hover {
+        cursor: pointer;
+      }
+    }
+
     .content_policy {
       text-align: center;
       padding-bottom: 15px;

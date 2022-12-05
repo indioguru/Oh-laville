@@ -16,7 +16,7 @@ const HomeAdelantos = () => {
 
         <div className="content_videos">
           {adelantos.map((item) => (
-            <div className="content_iframe" key={item.id}>
+            <div className="content_iframe ga4-call_to_action-video" key={item.id}>
               <iframe
                 className="iframe ga4-call_to_action-reproduccion"
                 srcDoc={`
@@ -50,7 +50,7 @@ const HomeAdelantos = () => {
             Tus palabras son un río Desbordándose en tu boca Tus emociones son
             espuma Que se absorbe con zapina
           </p>
-          <img src="/assets/consonido.png" alt="" />
+          <img className="ga4-call_to_action-verso_audio" src="/assets/consonido.png" alt="" />
         </div>
       </div>
     </div>

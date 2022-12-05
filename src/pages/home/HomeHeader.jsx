@@ -7,7 +7,7 @@ export const HomeHeader = () => {
     <div className="home_header containerAll">
       <div className="home_header_container">
         <div
-          className="content_vol"
+          className="content_vol ga4-call_to_action-master_audio"
           onClick={() => setVolumeActive(!volumeActive)}
         >
           <div className="vol">
@@ -36,7 +36,7 @@ export const HomeHeader = () => {
           <h1 className="textBot">19.20.2022</h1>
 
           <div className="contet_button">
-            <button>PRESAVE</button>
+            <button className="ga4-call_to_action-presave">PRESAVE</button>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ export const HomeHeader = () => {
           {(resolution) => {
             return resolution ? (
               <div className="content_decoration">
-               <img src="/assets/scroll.png" alt="scroll" />
+                <img src="/assets/scroll.png" alt="scroll" />
               </div>
             ) : (
               <div className="contet_img">
