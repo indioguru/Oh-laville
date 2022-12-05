@@ -44,7 +44,7 @@ export const HomeHeader = () => {
           {(resolution) => {
             return resolution ? (
               <div className="content_decoration">
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SCROLL</p>
+               <img src="/assets/scroll.png" alt="scroll" />
               </div>
             ) : (
               <div className="contet_img">

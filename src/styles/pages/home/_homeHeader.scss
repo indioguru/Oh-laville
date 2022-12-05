@@ -3,7 +3,7 @@
     .content_vol {
       position: absolute;
       right: 0;
-      margin: 20px;
+      margin: 20px 0;
       .vol {
         width: 80px;
         height: 40px;
@@ -59,12 +59,8 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      P {
-        transform: rotate(90deg);
-        text-decoration-line: underline;
-        letter-spacing: 4px;
-        font-size: 12px;
-        font-family: sans-medium;
+      img{
+        width: 20px;
       }
     }
   }
