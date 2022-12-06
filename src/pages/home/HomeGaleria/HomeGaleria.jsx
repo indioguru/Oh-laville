@@ -1,11 +1,29 @@
 import React from "react";
+import { useState } from "react";
 
 export const HomeGaleria = () => {
+  const [versoUno, setVersoUno] = useState(true);
+  const [versoDos, setVersoDos] = useState(true);
   return (
     <div className="home_galeria containerAll">
       <div className="lyrics">
         <p>Tu felicidad es romántica tu forma de amar enígmatica</p>
-        <img className="ga4-call_to_action-verso_audio" src="/assets/consonido.png" alt="consonido" />
+
+        {versoUno ? (
+          <img
+            onClick={() => setVersoUno(!versoUno)}
+            className="ga4-call_to_action-verso_audio"
+            src="/assets/consonido.png"
+            alt="consonido"
+          />
+        ) : (
+          <img
+            onClick={() => setVersoUno(!versoUno)}
+            className="ga4-call_to_action-verso_audio"
+            src="/assets/sinsonido.png"
+            alt="sinsonido"
+          />
+        )}
       </div>
 
       <div className="home_galeria_images">
@@ -31,7 +49,21 @@ export const HomeGaleria = () => {
               El brillo blanco de tu pelo Siempre fiel a tu retrato El velo
               blanco de tus ojos Lo que amansa tus demonios
             </p>
-            <img className="ga4-call_to_action-verso_audio" src="/assets/consonido.png" alt="consonido" />
+            {versoDos ? (
+              <img
+                onClick={() => setVersoDos(!versoDos)}
+                className="ga4-call_to_action-verso_audio"
+                src="/assets/consonido.png"
+                alt="consonido"
+              />
+            ) : (
+              <img
+                onClick={() => setVersoDos(!versoDos)}
+                className="ga4-call_to_action-verso_audio"
+                src="/assets/sinsonido.png"
+                alt="sinsonido"
+              />
+            )}
           </div>
         )}
 
@@ -52,7 +84,21 @@ export const HomeGaleria = () => {
             El brillo blanco de tu pelo Siempre fiel a tu retrato El velo blanco
             de tus ojos Lo que amansa tus demonios
           </p>
-          <img src="/assets/consonido.png" alt="consonido" />
+          {versoDos ? (
+            <img
+              onClick={() => setVersoDos(!versoDos)}
+              className="ga4-call_to_action-verso_audio"
+              src="/assets/consonido.png"
+              alt="consonido"
+            />
+          ) : (
+            <img
+              onClick={() => setVersoDos(!versoDos)}
+              className="ga4-call_to_action-verso_audio"
+              src="/assets/sinsonido.png"
+              alt="sinsonido"
+            />
+          )}
         </div>
       )}
     </div>

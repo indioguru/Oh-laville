@@ -25,7 +25,11 @@ const HomeRespuestasEnRedes = () => {
         </div>
 
         <div className="content_button">
-          <button className="ga4-call_to_action-ir_a_post">IR AL POST</button>
+          <a target="_blank" href="https://instagram.com/p/Clj01sANAv8/">
+            <button className="ga4-c all_to_action-ir_a_post">
+              IR AL POST
+            </button>
+          </a>
         </div>
       </div>
     </div>

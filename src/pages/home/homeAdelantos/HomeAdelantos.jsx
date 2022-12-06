@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Adelantos from "./Adelantos.json";
 const HomeAdelantos = () => {
   const [adelantos, setAdelantos] = useState([]);
+  const [versoTres, setVersoTres] = useState(true);
 
   useEffect(() => {
     setAdelantos(Adelantos.Adelantos);
@@ -16,7 +17,10 @@ const HomeAdelantos = () => {
 
         <div className="content_videos">
           {adelantos.map((item) => (
-            <div className="content_iframe ga4-call_to_action-video" key={item.id}>
+            <div
+              className="content_iframe ga4-call_to_action-video"
+              key={item.id}
+            >
               <iframe
                 className="iframe ga4-call_to_action-reproduccion"
                 srcDoc={`
@@ -50,7 +54,22 @@ const HomeAdelantos = () => {
             Tus palabras son un río Desbordándose en tu boca Tus emociones son
             espuma Que se absorbe con zapina
           </p>
-          <img className="ga4-call_to_action-verso_audio" src="/assets/consonido.png" alt="" />
+
+          {versoTres ? (
+            <img
+              onClick={() => setVersoTres(!versoTres)}
+              className="ga4-call_to_action-verso_audio"
+              src="/assets/consonido.png"
+              alt="consonido"
+            />
+          ) : (
+            <img
+              onClick={() => setVersoTres(!versoTres)}
+              src="/assets/sinsonido.png"
+              className="ga4-call_to_action-verso_audio"
+              alt="sinsonido"
+            />
+          )}
         </div>
       </div>
     </div>

@@ -2,6 +2,16 @@
   position: relative;
   overflow: hidden;
 
+  img {
+    transition: 0.5s ease;
+  }
+
+  @media (hover: hover) {
+    .lyrics img:hover {
+      transform: scale(1.2);
+      transition: 0.5s ease;
+    }
+  }
   .lyrics {
     font-family: sans-medium;
     letter-spacing: 4px;

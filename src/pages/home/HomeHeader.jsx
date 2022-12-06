@@ -21,6 +21,12 @@ export const HomeHeader = () => {
 
         <div className="content_flex">
           <h1 className="textTop">TÚ / OLV Y PAOLA NAVARRETE</h1>
+
+          <h1 className="textBot">09.12.22</h1>
+          <p className="textTopTwo">
+            Descubre de qué se trata Tú y ten la primera opción de compra en los
+            shows de OLV y de Paola en 2023.
+          </p>
           <Media query="(max-width: 750px)">
             {(resolution) => {
               return resolution ? (
@@ -33,19 +39,21 @@ export const HomeHeader = () => {
             }}
           </Media>
 
-          <h1 className="textBot">19.20.2022</h1>
-
           <div className="contet_button">
-            <button className="ga4-call_to_action-presave">PRESAVE</button>
+            <a target="_blank" href="https://onerpm.link/SmartLink_Tu">
+              <button className="ga4-call_to_action-presave">PRESAVE</button>
+            </a>
           </div>
+        </div>
+
+        <div className="content_decoration">
+          <img src="/assets/scroll.png" alt="scroll" />
         </div>
 
         <Media query="(max-width: 750px)">
           {(resolution) => {
             return resolution ? (
-              <div className="content_decoration">
-                <img src="/assets/scroll.png" alt="scroll" />
-              </div>
+              ""
             ) : (
               <div className="contet_img">
                 <img src="/assets/pastilla_derretida.png" alt="" />

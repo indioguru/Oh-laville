@@ -5,10 +5,10 @@ const HomeEarlyBirds = () => {
     <div className="home_earlyBird containerAll">
       <div className="home_earlyBird_container">
         <div className="header">
-          <h1>PRIMEROS TIEMPOS TOUR 2022</h1>
+          <h1>PRIMEROS TIEMPOS TOUR 2023</h1>
           <p>
             Inscríbete para tener la primera opción de compra para los shows de
-            OLV y de Paola en 2023. También recibirás sorpresas bellas
+            OLV y de Paola en 2023. También recibirás sorpresas bellas.
           </p>
         </div>
 
