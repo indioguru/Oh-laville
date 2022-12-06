@@ -21,19 +21,26 @@ export const HomeGaleria = () => {
 
   return (
     <div className="home_galeria containerAll">
+      <audio id="versTwo" src="/assets/audios/landing-tu-v2.mp3"></audio>
       <div className="lyrics">
         <p>Tu felicidad es romántica tu forma de amar enígmatica</p>
-
-        {versoUno ? (
+        <audio id="versOne" src="/assets/audios/landing-tu-v1.mp3"></audio>
+        {!versoUno ? (
           <img
-            onClick={() => setVersoUno(!versoUno)}
+            onClick={() => {
+              setVersoUno(!versoUno);
+              document.getElementById("versOne").pause();
+            }}
             className="ga4-call_to_action-verso_audio"
             src="/assets/consonido.png"
             alt="consonido"
           />
         ) : (
           <img
-            onClick={() => setVersoUno(!versoUno)}
+            onClick={() => {
+              setVersoUno(!versoUno);
+              document.getElementById("versOne").play();
+            }}
             className="ga4-call_to_action-verso_audio"
             src="/assets/sinsonido.png"
             alt="sinsonido"
@@ -64,16 +71,23 @@ export const HomeGaleria = () => {
               El brillo blanco de tu pelo Siempre fiel a tu retrato El velo
               blanco de tus ojos Lo que amansa tus demonios
             </p>
-            {versoDos ? (
+
+            {!versoDos ? (
               <img
-                onClick={() => setVersoDos(!versoDos)}
+                onClick={() => {
+                  setVersoDos(!versoDos);
+                  document.getElementById("versTwo").pause();
+                }}
                 className="ga4-call_to_action-verso_audio"
                 src="/assets/consonido.png"
                 alt="consonido"
               />
             ) : (
               <img
-                onClick={() => setVersoDos(!versoDos)}
+                onClick={() => {
+                  setVersoDos(!versoDos);
+                  document.getElementById("versTwo").play();
+                }}
                 className="ga4-call_to_action-verso_audio"
                 src="/assets/sinsonido.png"
                 alt="sinsonido"
@@ -99,16 +113,22 @@ export const HomeGaleria = () => {
             El brillo blanco de tu pelo Siempre fiel a tu retrato El velo blanco
             de tus ojos Lo que amansa tus demonios
           </p>
-          {versoDos ? (
+          {!versoDos ? (
             <img
-              onClick={() => setVersoDos(!versoDos)}
+              onClick={() => {
+                setVersoDos(!versoDos);
+                document.getElementById("versTwo").pause();
+              }}
               className="ga4-call_to_action-verso_audio"
               src="/assets/consonido.png"
               alt="consonido"
             />
           ) : (
             <img
-              onClick={() => setVersoDos(!versoDos)}
+              onClick={() => {
+                setVersoDos(!versoDos);
+                document.getElementById("versTwo").play();
+              }}
               className="ga4-call_to_action-verso_audio"
               src="/assets/sinsonido.png"
               alt="sinsonido"

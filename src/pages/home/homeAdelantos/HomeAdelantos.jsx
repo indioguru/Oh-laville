@@ -11,6 +11,7 @@ const HomeAdelantos = () => {
   return (
     <div className="home_adelantos containerAll">
       <div className="home_adelantos_container">
+        <audio id="versThree" src="/assets/audios/landing-tu-v3.mp3"></audio>
         <div className="header">
           <h1> ADELANTOS</h1>
         </div>
@@ -55,16 +56,22 @@ const HomeAdelantos = () => {
             espuma Que se absorbe con zapina
           </p>
 
-          {versoTres ? (
+          {!versoTres ? (
             <img
-              onClick={() => setVersoTres(!versoTres)}
+              onClick={() => {
+                setVersoTres(!versoTres);
+                document.getElementById("versThree").pause();
+              }}
               className="ga4-call_to_action-verso_audio"
               src="/assets/consonido.png"
               alt="consonido"
             />
           ) : (
             <img
-              onClick={() => setVersoTres(!versoTres)}
+              onClick={() => {
+                setVersoTres(!versoTres);
+                document.getElementById("versThree").play();
+              }}
               src="/assets/sinsonido.png"
               className="ga4-call_to_action-verso_audio"
               alt="sinsonido"

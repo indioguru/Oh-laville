@@ -17,15 +17,28 @@ export const HomeHeader = () => {
     document.addEventListener("mousemove", parallax);
   }, []);
 
+  const audioPlayPause = () => {
+    const audio = document.getElementById("master");
+    if (!volumeActive) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  };
+
   return (
     <div className="home_header containerAll">
       <div className="home_header_container">
+        <audio id="master" src="/assets/audios/landing-tu-master.mp3"></audio>
         <div
           className="content_vol ga4-call_to_action-master_audio"
-          onClick={() => setVolumeActive(!volumeActive)}
+          onClick={() => {
+            setVolumeActive(!volumeActive);
+            audioPlayPause();
+          }}
         >
           <div className="vol">
-            {volumeActive ? (
+            {!volumeActive ? (
               <img className="noSound" src="/assets/sinsonido.png" alt="" />
             ) : (
               <img className="sound" src="/assets/consonido.png" alt="" />
@@ -37,10 +50,7 @@ export const HomeHeader = () => {
           <h1 className="textTop">TÚ / OLV Y PAOLA NAVARRETE</h1>
 
           <h1 className="textBot">09.12.22</h1>
-          <p className="textTopTwo">
-            Descubre de qué se trata Tú y ten la primera opción de compra en los
-            shows de OLV y de Paola en 2023.
-          </p>
+
           <Media query="(max-width: 750px)">
             {(resolution) => {
               return resolution ? (

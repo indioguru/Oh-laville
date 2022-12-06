@@ -2,13 +2,9 @@
   "Adelantos": [
     {
       "id": 1,
-      "mineaturaAdelanto": "/assets/FotosOLV/PORTALES_V2 43.jpg",
-      "urlVideo": "https://www.youtube.com/embed/WSwARTscluE"
-    },
-    {
-      "id": 2,
-      "mineaturaAdelanto": "/assets/FotosOLV/x.jpg",
-      "urlVideo": "https://www.youtube.com/embed/RYVQ0ZzL-tY"
+      "mineaturaAdelanto": "/assets/framevideoolv.png",
+      "urlVideo": "https://youtu.be/fxPsAhTAKqg"
     }
+   
   ]
 }

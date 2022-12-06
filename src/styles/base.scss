@@ -7,33 +7,37 @@
 //---------------------Fuentes---------------------
 @font-face {
   font-family: "sans-bold";
-  src: url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.ttf")
+  src: url("/assets/tipofrafía/MYRIADPRO-BOLD/MYRIADPRO-BOLD.OTF")
       format("truetype"),
-    url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.eot") format("eot"),
-    url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.woff") format("woff"),
-    url("/assets/tipofrafía/NotoSans-bold/NotoSans-Bold.woff2") format("woff2");
+    url("/assets/tipofrafía/MYRIADPRO-BOLD/MYRIADPRO-BOLD.eot")
+      format("eot"),
+    url("/assets/tipofrafía/MYRIADPRO-BOLD/MYRIADPRO-BOLD.woff")
+      format("woff"),
+    url("/assets/tipofrafía/MYRIADPRO-BOLD/MYRIADPRO-BOLD.woff2")
+      format("woff2");
 }
 
 @font-face {
   font-family: "sans-medium";
-  src: url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.ttf")
+  src: url("/assets/tipofrafía/MYRIADPRO-REGULAR/MYRIADPRO-REGULAR.OTF")
       format("truetype"),
-    url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.eot") format("eot"),
-    url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.woff")
+    url("/assets/tipofrafía/MYRIADPRO-REGULAR/MYRIADPRO-REGULAR.eot")
+      format("eot"),
+    url("/assets/tipofrafía/MYRIADPRO-REGULAR/MYRIADPRO-REGULAR.woff")
       format("woff"),
-    url("/assets/tipofrafía/NotoSans-medium/NotoSans-Medium.woff2")
+    url("/assets/tipofrafía/MYRIADPRO-REGULAR/MYRIADPRO-REGULAR.woff2")
       format("woff2");
 }
 
 @font-face {
   font-family: "sans-semibold";
-  src: url("/assets/tipofrafía/NotoSans-semibold/NotoSans-SemiBold.ttf")
+  src: url("/assets/tipofrafía/MYRIADPRO-SEMIBOLD/MYRIADPRO-SEMIBOLD.OTF")
       format("truetype"),
-    url("/assets/tipofrafía//NotoSans-semibold/NotoSans-SemiBold.eot")
+    url("/assets/tipofrafía/MYRIADPRO-SEMIBOLD/MYRIADPRO-SEMIBOLD.eot")
       format("eot"),
-    url("/assets/tipofrafía/NotoSans-semibold/NotoSans-SemiBold.woff")
+    url("/assets/tipofrafía/MYRIADPRO-SEMIBOLD/MYRIADPRO-SEMIBOLD.woff")
       format("woff"),
-    url("/assets/tipofrafía/NotoSans-semibold/NotoSans-SemiBold.woff2")
+    url("/assets/tipofrafía/MYRIADPRO-SEMIBOLD/MYRIADPRO-SEMIBOLD.woff2")
       format("woff2");
 }
 
@@ -72,11 +76,11 @@ img {
   position: relative;
 }
 
-.lyrics{
+.lyrics {
   transition: 0.5s all;
 }
 
-.scaleAnimation{
+.scaleAnimation {
   transform: scale(1.1);
 }
 
