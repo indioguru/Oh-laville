@@ -16,8 +16,8 @@ const HomeRespuestasEnRedes = () => {
         </div>
 
         <div className="content_responses">
-          {allResponses.map((item) => (
-            <div className="responses" key={item.id}>
+          {allResponses.map((item, i) => (
+            <div className="responses" id={`responses_${i}`} key={item.id}>
               <p>{item.respuesta}</p>
               <p className="name">{item.nombre}</p>
             </div>

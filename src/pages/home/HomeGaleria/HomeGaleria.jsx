@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
 export const HomeGaleria = () => {
   const [versoUno, setVersoUno] = useState(true);
   const [versoDos, setVersoDos] = useState(true);
+
+  useEffect(() => {
+    const parallax = (e) => {
+      document.querySelectorAll(".imagen").forEach((layer) => {
+        const speed = layer.getAttribute("data-speed");
+
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      });
+    };
+
+    document.addEventListener("mousemove", parallax);
+  }, []);
+
   return (
     <div className="home_galeria containerAll">
       <div className="lyrics">
@@ -27,16 +42,16 @@ export const HomeGaleria = () => {
       </div>
 
       <div className="home_galeria_images">
-        <div className="imagen">
+        <div className="imagen" data-speed="2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/2.png" alt="marco1" />
         </div>
 
-        <div className="imagen">
+        <div className="imagen" data-speed="1.5">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/3.png" alt="marco1" />
         </div>
-        <div className="imagen">
+        <div className="imagen" data-speed="2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/1.png" alt="marco1" />
         </div>
@@ -67,12 +82,12 @@ export const HomeGaleria = () => {
           </div>
         )}
 
-        <div className="imagen">
+        <div className="imagen" data-speed="2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/4.png" alt="marco1" />
         </div>
 
-        <div className="imagen">
+        <div className="imagen" data-speed="1.5">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/6.png" alt="marco1" />
         </div>

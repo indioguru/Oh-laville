@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HomeAdelantos from "./homeAdelantos/HomeAdelantos";
 import { HomeBackground } from "./HomeBackground";
 import HomeEarlyBirds from "./HomeEarlyBirds";
@@ -7,6 +7,7 @@ import { HomeHeader } from "./HomeHeader";
 import HomeRespuestasEnRedes from "./homeRespuestas/HomeRespuestasEnRedes";
 
 const Home = () => {
+
   return (
     <div className="home">
       <HomeBackground />

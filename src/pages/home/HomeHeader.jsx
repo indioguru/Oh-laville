@@ -1,7 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Media from "react-media";
 export const HomeHeader = () => {
   const [volumeActive, setVolumeActive] = useState(false);
+
+  useEffect(() => {
+    const parallax = (e) => {
+      document.querySelectorAll(".contet_img").forEach((layer) => {
+        const speed = layer.getAttribute("data-speed");
+
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      });
+    };
+
+    document.addEventListener("mousemove", parallax);
+  }, []);
 
   return (
     <div className="home_header containerAll">
@@ -30,7 +44,7 @@ export const HomeHeader = () => {
           <Media query="(max-width: 750px)">
             {(resolution) => {
               return resolution ? (
-                <div className="contet_img">
+                <div className="contet_img" data-speed="2">
                   <img src="/assets/pastilla_derretida.png" alt="" />
                 </div>
               ) : (
@@ -55,7 +69,7 @@ export const HomeHeader = () => {
             return resolution ? (
               ""
             ) : (
-              <div className="contet_img">
+              <div className="contet_img" data-speed="2">
                 <img src="/assets/pastilla_derretida.png" alt="" />
               </div>
             );

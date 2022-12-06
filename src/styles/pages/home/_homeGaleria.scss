@@ -1,6 +1,5 @@
 &_galeria {
   position: relative;
-  overflow: hidden;
 
   img {
     transition: 0.5s ease;
@@ -23,6 +22,7 @@
     padding: 50px 0;
     max-width: 300px;
     margin: 0px auto;
+  
 
     p {
       padding-right: 20px;

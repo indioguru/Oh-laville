@@ -42,6 +42,26 @@ body {
   font-family: "sans-medium";
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d81a46;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 img {
   width: 100%;
 }
@@ -50,6 +70,14 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+}
+
+.lyrics{
+  transition: 0.5s all;
+}
+
+.scaleAnimation{
+  transform: scale(1.1);
 }
 
 .contet_button {
