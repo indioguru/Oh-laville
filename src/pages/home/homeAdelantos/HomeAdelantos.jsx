@@ -50,10 +50,15 @@ const HomeAdelantos = () => {
 
         <div className="content_footer">
           <p>
-            El frío blanco de tu pelo <br /> siempre fiel a su retrato <br /> el
-            velo negro de tus ojos <br /> lo que amanza tus demonios <br /> tus
-            palabras son un río <br /> desbordándose en tu boca <br /> tus
-            emociones son espuma <br /> que se absorbe con zapina.
+            El brillo blanco de tu pelo <br />
+            Siempre fiel a su retrato <br />
+            El velo negro de tus ojos <br />
+            Lo que amansa tus demonios <br />
+            <br />
+            Tus palabras son un río <br />
+            Desbordándose en tu boca <br />
+            Tus emociones son espuma <br />
+            Que se absorve con zapina <br />
           </p>
 
           {!versoTres ? (

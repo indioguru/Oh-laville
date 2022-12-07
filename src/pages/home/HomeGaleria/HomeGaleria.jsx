@@ -23,7 +23,9 @@ export const HomeGaleria = () => {
     <div className="home_galeria containerAll">
       <audio id="versTwo" src="/assets/audios/landing-tu-v2.mp3"></audio>
       <div className="lyrics">
-        <p>Tu felicidad es romántica tu forma de amar enigmática. </p>
+        <p>
+          Tu felicidad es romántica <br /> Tu forma de amar enigmática.{" "}
+        </p>
         <audio id="versOne" src="/assets/audios/landing-tu-v1.mp3"></audio>
         {!versoUno ? (
           <img
@@ -68,9 +70,11 @@ export const HomeGaleria = () => {
         {window.innerWidth < 768 && (
           <div className="lyrics lyrics_2">
             <p>
-              Indescifrable fuente de luz <br /> que se prende con la luna
-              <br /> que me da vida mientras bailas <br /> con el aire que
-              respiras.
+              Indescifrable fuente de luz <br />
+              Que se prende con la luna <br />
+              Que me da vida mientras bailas <br />
+              Con el aire que respiras
+              <br />
             </p>
 
             {!versoDos ? (
@@ -115,9 +119,10 @@ export const HomeGaleria = () => {
       {window.innerWidth > 768 && (
         <div className="lyrics lyrics_2">
           <p>
-            Indescifrable fuente de luz <br /> que se prende con la luna
-            <br /> que me da vida mientras bailas <br /> con el aire que
-            respiras.
+            Indescifrable fuente de luz <br />
+            Que se prende con la luna <br />
+            Que me da vida mientras bailas <br />
+            Con el aire que respiras
           </p>
           {!versoDos ? (
             <img

@@ -105,6 +105,8 @@ const HomeEarlyBirds = () => {
                   <option value="Sogamoso">Sogamoso</option>
                   <option value="Tunja">Tunja</option>
                   <option value="Otra">Otra</option>
+                  <option value="Ipiales">Ipiales</option>
+                  <option value="Manizales">Manizales</option>
                 </select>
                 <span id="mce-CIUDAD-HELPERTEXT" class="helper_text"></span>
               </div>
