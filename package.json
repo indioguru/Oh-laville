@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-media": "^1.10.0",
     "react-router-dom": "^6.4.3",
+    "react-scroll": "^1.8.8",
     "sass": "^1.56.1",
     "three": "^0.146.0"
   },

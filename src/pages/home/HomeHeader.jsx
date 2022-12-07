@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Media from "react-media";
+import { Link } from "react-scroll";
 export const HomeHeader = () => {
   const [volumeActive, setVolumeActive] = useState(false);
 
@@ -44,6 +45,19 @@ export const HomeHeader = () => {
               <img className="sound" src="/assets/consonido.png" alt="" />
             )}
           </div>
+        </div>
+
+        <div className="contet_button">
+          <Link
+            activeClass="active"
+            to="home_earlyBird"
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={500}
+          >
+            <button className="tour">Tour 2023</button>
+          </Link>
         </div>
 
         <div className="content_flex">
