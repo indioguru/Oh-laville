@@ -49,16 +49,16 @@ export const HomeGaleria = () => {
       </div>
 
       <div className="home_galeria_images">
-        <div className="imagen" data-speed="2">
+        <div className="imagen" data-speed="2.2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/8.jpg" alt="marco1" />
         </div>
 
-        <div className="imagen" data-speed="1.5">
+        <div className="imagen" data-speed="1.8">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/7.jpg" alt="marco1" />
         </div>
-        <div className="imagen" data-speed="2">
+        <div className="imagen" data-speed="1.2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/2.png" alt="marco1" />
         </div>
@@ -97,12 +97,12 @@ export const HomeGaleria = () => {
           </div>
         )}
 
-        <div className="imagen" data-speed="2">
+        <div className="imagen" data-speed="2.1">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img className="imagen_back" src="/assets/fotos/9.jpg" alt="marco1" />
         </div>
 
-        <div className="imagen" data-speed="1.5">
+        <div className="imagen" data-speed="2.5">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
           <img
             className="imagen_back"
