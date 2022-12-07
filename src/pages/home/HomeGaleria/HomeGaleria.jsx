@@ -23,7 +23,7 @@ export const HomeGaleria = () => {
     <div className="home_galeria containerAll">
       <audio id="versTwo" src="/assets/audios/landing-tu-v2.mp3"></audio>
       <div className="lyrics">
-        <p>Tu felicidad es romántica tu forma de amar enígmatica</p>
+        <p>Tu felicidad es romántica tu forma de amar enigmática. </p>
         <audio id="versOne" src="/assets/audios/landing-tu-v1.mp3"></audio>
         {!versoUno ? (
           <img
@@ -51,16 +51,16 @@ export const HomeGaleria = () => {
       <div className="home_galeria_images">
         <div className="imagen" data-speed="2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
-          <img className="imagen_back" src="/assets/fotos/2.png" alt="marco1" />
+          <img className="imagen_back" src="/assets/fotos/8.jpg" alt="marco1" />
         </div>
 
         <div className="imagen" data-speed="1.5">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
-          <img className="imagen_back" src="/assets/fotos/3.png" alt="marco1" />
+          <img className="imagen_back" src="/assets/fotos/7.jpg" alt="marco1" />
         </div>
         <div className="imagen" data-speed="2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
-          <img className="imagen_back" src="/assets/fotos/1.png" alt="marco1" />
+          <img className="imagen_back" src="/assets/fotos/2.png" alt="marco1" />
         </div>
       </div>
 
@@ -68,8 +68,9 @@ export const HomeGaleria = () => {
         {window.innerWidth < 768 && (
           <div className="lyrics lyrics_2">
             <p>
-              El brillo blanco de tu pelo Siempre fiel a tu retrato El velo
-              blanco de tus ojos Lo que amansa tus demonios
+              Indescifrable fuente de luz <br /> que se prende con la luna
+              <br /> que me da vida mientras bailas <br /> con el aire que
+              respiras.
             </p>
 
             {!versoDos ? (
@@ -98,20 +99,25 @@ export const HomeGaleria = () => {
 
         <div className="imagen" data-speed="2">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
-          <img className="imagen_back" src="/assets/fotos/4.png" alt="marco1" />
+          <img className="imagen_back" src="/assets/fotos/9.jpg" alt="marco1" />
         </div>
 
         <div className="imagen" data-speed="1.5">
           <img className="marco" src="/assets/marco1.png" alt="marco1" />
-          <img className="imagen_back" src="/assets/fotos/6.png" alt="marco1" />
+          <img
+            className="imagen_back"
+            src="/assets/fotos/10.jpg"
+            alt="marco1"
+          />
         </div>
       </div>
 
       {window.innerWidth > 768 && (
         <div className="lyrics lyrics_2">
           <p>
-            El brillo blanco de tu pelo Siempre fiel a tu retrato El velo blanco
-            de tus ojos Lo que amansa tus demonios
+            Indescifrable fuente de luz <br /> que se prende con la luna
+            <br /> que me da vida mientras bailas <br /> con el aire que
+            respiras.
           </p>
           {!versoDos ? (
             <img

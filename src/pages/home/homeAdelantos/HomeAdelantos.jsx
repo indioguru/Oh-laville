@@ -34,8 +34,6 @@ const HomeAdelantos = () => {
               </style>
               <a href=${item.urlVideo}> 
                   <img src="${item.mineaturaAdelanto}">
-                
-            
               </a>
                 `}
                 src={`${item.urlVideo}`}
@@ -52,8 +50,10 @@ const HomeAdelantos = () => {
 
         <div className="content_footer">
           <p>
-            Tus palabras son un río Desbordándose en tu boca Tus emociones son
-            espuma Que se absorbe con zapina
+            El frío blanco de tu pelo <br /> siempre fiel a su retrato <br /> el
+            velo negro de tus ojos <br /> lo que amanza tus demonios <br /> tus
+            palabras son un río <br /> desbordándose en tu boca <br /> tus
+            emociones son espuma <br /> que se absorbe con zapina.
           </p>
 
           {!versoTres ? (
