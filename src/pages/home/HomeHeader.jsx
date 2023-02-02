@@ -78,8 +78,8 @@ export const HomeHeader = () => {
           </Media>
 
           <div className="contet_button">
-            <a target="_blank" href="https://onerpm.link/SmartLink_Tu">
-              <button className="ga4-call_to_action-presave">PRESAVE</button>
+            <a className="ga4-call_to_action-presave" target="_blank" href="https://onerpm.link/SmartLink_Tu">
+              <button >PRESAVE</button>
             </a>
           </div>
         </div>

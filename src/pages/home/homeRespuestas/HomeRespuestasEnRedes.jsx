@@ -20,7 +20,6 @@ const HomeRespuestasEnRedes = () => {
             <div className="responses" id={`responses_${i}`} key={item.id}>
               <p>{item.respuesta}</p>
               <p className="name">
-                
                 <span>@</span>
                 {item.nombre}
               </p>
@@ -29,10 +28,12 @@ const HomeRespuestasEnRedes = () => {
         </div>
 
         <div className="content_button">
-          <a target="_blank" href="https://instagram.com/p/Clj01sANAv8/">
-            <button className="ga4-c all_to_action-ir_a_post">
-              IR AL POST
-            </button>
+          <a
+            className="ga4-call_to_action-ir_a_post"
+            target="_blank"
+            href="https://instagram.com/p/Clj01sANAv8/"
+          >
+            <button>IR AL POST</button>
           </a>
         </div>
       </div>

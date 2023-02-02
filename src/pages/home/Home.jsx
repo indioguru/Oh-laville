@@ -7,11 +7,10 @@ import { HomeHeader } from "./HomeHeader";
 import HomeRespuestasEnRedes from "./homeRespuestas/HomeRespuestasEnRedes";
 
 const Home = () => {
-
   return (
     <div className="home">
       <HomeBackground />
-<button></button>
+      <button></button>
       <div className="home_container">
         <HomeHeader />
         <HomeGaleria />
