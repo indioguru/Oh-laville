@@ -1,18 +1,4 @@
-import React, { useState } from "react";
-import { useRef } from "react";
-
 const HomeEarlyBirds = () => {
-  const [email, setEmail] = useState("");
-  const [nomb, setNomb] = useState("");
-  const [apell, setApell] = useState("");
-  const [mmerge7, setMmerge7] = useState("");
-  const [ciudad, setCiudad] = useState("");
-  const newsletterSubmit = useRef(null);
-
-  const doSubmit = () => {
-    newsletterSubmit.current.click();
-  };
-
   return (
     <div className="home_earlyBird containerAll">
       <div className="home_earlyBird_container">
@@ -38,8 +24,6 @@ const HomeEarlyBirds = () => {
                 <label htmlFor="name">Nombre</label>
                 <input
                   type="text"
-                  onChange={setNomb}
-                  defaultValue={nomb}
                   name="NOMB"
                   class="required"
                   id="mce-NOMB"
@@ -51,8 +35,6 @@ const HomeEarlyBirds = () => {
                 <label htmlFor="name">Apellido</label>
                 <input
                   type="text"
-                  onChange={setApell}
-                  defaultValue={apell}
                   name="APELL"
                   class="required"
                   id="mce-APELL"
@@ -62,8 +44,6 @@ const HomeEarlyBirds = () => {
               <div className="input">
                 <label htmlFor="name">Email</label>
                 <input
-                  onChange={setEmail}
-                  defaultValue={email}
                   type="email"
                   name="EMAIL"
                   class="required email"
@@ -74,8 +54,6 @@ const HomeEarlyBirds = () => {
               <div className="input">
                 <label htmlFor="name">Celular</label>
                 <input
-                  onChange={setMmerge7}
-                  defaultValue={mmerge7}
                   type="text"
                   name="MMERGE7"
                   class="required"
@@ -86,13 +64,7 @@ const HomeEarlyBirds = () => {
               <div class="input">
                 <label htmlFor="name">Ciudad</label>
 
-                <select
-                  defaultValue={ciudad}
-                  name="CIUDAD"
-                  class="required"
-                  id="mce-CIUDAD"
-                  required
-                >
+                <select name="CIUDAD" class="required" id="mce-CIUDAD" required>
                   <option value=""></option>
                   <option value="Barranquilla">Barranquilla</option>
                   <option value="Bogotá">Bogotá</option>
@@ -111,9 +83,9 @@ const HomeEarlyBirds = () => {
                 <span id="mce-CIUDAD-HELPERTEXT" class="helper_text"></span>
               </div>
             </div>
+            
             <div className="clear" style={{ display: "none" }}>
               <input
-                ref={newsletterSubmit}
                 type="submit"
                 value="SUSCRÍBETE AL NEWSLETTER"
                 name="subscribe"
@@ -121,6 +93,7 @@ const HomeEarlyBirds = () => {
                 className="button"
               />
             </div>
+
             <div className="contet_button">
               <button>ENVIAR</button>
             </div>
